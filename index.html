@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rune Rush: Match Magic — Privacy Policy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Cinzel:wght@600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+  /* Las imágenes están en img/ (copiadas del juego) */
+  :root {
+    --ink: #3a2412;
+    --ink-soft: #5c3d22;
+    --gold: #ffd66b;
+    --purple: #c4a8ff;
+    --wax: #8e1b14;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; overflow-x: hidden; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: "Crimson Text", Georgia, serif;
+    font-size: 19px;
+    line-height: 1.6;
+    color: var(--ink);
+    background: #0f0a1c url("img/elven_forest.jpg") center / cover fixed;
+  }
+  body::before { /* oscurece el bosque para que el pergamino destaque */
+    content: ""; position: fixed; inset: 0; pointer-events: none;
+    background: radial-gradient(ellipse at center, rgba(10,6,20,.35) 0%, rgba(10,6,20,.85) 100%);
+  }
+  .wrap { position: relative; max-width: 820px; margin: 0 auto; padding: 28px 16px 56px; }
+
+  /* ---------- encabezado ---------- */
+  header { text-align: center; color: #fff; margin-bottom: 18px; }
+  header img.icon { width: 104px; height: 104px; border-radius: 24px;
+    box-shadow: 0 8px 28px rgba(0,0,0,.6), 0 0 0 3px rgba(255,214,107,.6); }
+  header h1 { font-family: "Cinzel Decorative", serif; color: var(--gold); margin: 14px 0 0;
+    font-size: clamp(2rem, 6vw, 3rem); letter-spacing: .02em;
+    text-shadow: 0 3px 0 #2a0f3a, 0 0 24px rgba(255,190,70,.35); }
+  header .subtitle { font-family: "Cinzel", serif; color: var(--purple); font-size: 1.25rem;
+    text-shadow: 0 2px 0 #1a0826; margin-top: -4px; }
+  .langs { margin-top: 14px; display: flex; gap: 10px; justify-content: center; }
+  .langs a { font-family: "Cinzel", serif; font-weight: 700; color: #fff; text-decoration: none;
+    padding: 8px 18px; border-radius: 10px; border: 2px solid #c9a24a;
+    background: linear-gradient(#6b3fb0, #3f2170); box-shadow: 0 4px 0 #24103f; }
+  .langs a:hover { filter: brightness(1.15); }
+
+  /* ---------- pergamino con rodillos ---------- */
+  .roller { height: 44px; background: url("img/scroll_roller.png") center / 100% 100% no-repeat;
+    position: relative; z-index: 2; margin: 0 -10px; filter: drop-shadow(0 6px 8px rgba(0,0,0,.5)); }
+  .scroll {
+    position: relative; margin: -14px 0; padding: 44px clamp(22px, 6vw, 64px) 40px;
+    background: url("img/parchment.jpg") center / 100% auto repeat-y, #e9d6ad;
+    box-shadow: inset 0 0 60px rgba(90,50,15,.55), inset 0 0 12px rgba(60,30,5,.6), 0 10px 40px rgba(0,0,0,.6);
+  }
+  .scroll h2.title { font-family: "Cinzel Decorative", serif; text-align: center; font-size: 1.9rem;
+    color: var(--wax); margin: 0 0 4px; }
+  .updated { text-align: center; font-style: italic; color: var(--ink-soft); margin-bottom: 26px; }
+
+  section.item { display: grid; grid-template-columns: 58px 1fr; gap: 14px; margin: 22px 0; }
+  section.item img { width: 58px; height: 58px; object-fit: contain;
+    filter: drop-shadow(0 3px 3px rgba(60,30,5,.45)); }
+  section.item h3 { font-family: "Cinzel", serif; font-size: 1.15rem; margin: 6px 0 4px; color: #4a1f60; }
+  section.item p { margin: 0 0 8px; }
+  a { color: #7b2a8f; }
+  .divider { text-align: center; margin: 40px 0 30px; }
+  .divider img { width: 84px; filter: drop-shadow(0 4px 4px rgba(60,20,5,.5)); }
+
+  /* ---------- pie ---------- */
+  footer { display: flex; align-items: flex-end; justify-content: center; gap: 18px; margin-top: 30px;
+    color: #fff; font-family: "Cinzel", serif; text-align: left; }
+  footer img { width: 110px; filter: drop-shadow(0 8px 10px rgba(0,0,0,.6)); }
+  footer .bubble { background: rgba(20,10,40,.8); border: 2px solid #c9a24a; border-radius: 14px;
+    padding: 12px 16px; max-width: 340px; font-size: .95rem; margin-bottom: 30px; }
+  footer .bubble strong { color: var(--gold); }
+
+  @media (max-width: 520px) {
+    body { font-size: 17px; }
+    section.item { grid-template-columns: 44px 1fr; gap: 10px; }
+    section.item img { width: 44px; height: 44px; }
+    .roller { height: 32px; margin: 0 -8px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <img class="icon" src="img/icon.png" alt="Rune Rush icon">
+  <h1>Rune Rush</h1>
+  <div class="subtitle">Match Magic</div>
+  <nav class="langs"><a href="#en">English</a><a href="#es">Español</a></nav>
+</header>
+
+<!-- ================================================================== ENGLISH -->
+<div class="roller"></div>
+<article class="scroll" id="en">
+  <h2 class="title">Privacy Policy</h2>
+  <div class="updated">Last updated: September 29, 2026</div>
+  <p>This Privacy Policy explains how <strong>Rune Rush: Match Magic</strong> (the "Game"), developed by
+  <strong>JC Studio 54</strong> ("we", "us"), handles information when you play it on Android devices.</p>
+
+  <section class="item"><img src="img/rune_earth.png" alt=""><div>
+    <h3>1. Information stored on your device</h3>
+    <p>The Game saves your progress (unlocked levels, stars, best scores) and your settings (music, sound,
+    vibration, language) <strong>only on your device</strong>. We do not receive or store this information on
+    our servers. Uninstalling the Game deletes it.</p>
+  </div></section>
+
+  <section class="item"><img src="img/rune_fire.png" alt=""><div>
+    <h3>2. Advertising (Google AdMob)</h3>
+    <p>The Game shows ads provided by Google AdMob. To serve and measure ads, Google and its partners may collect
+    and process information such as your device's advertising ID, IP address, device model and operating system,
+    and how you interact with ads. Depending on your region and your choices, ads may be personalized or
+    non-personalized. In the European Economic Area, the United Kingdom and Switzerland, the Game asks for your
+    consent before using personal data for ads, and you can change your choice at any time from the Game's settings.</p>
+    <p>You can reset your advertising ID or opt out of personalized ads in your device settings
+    (Settings &gt; Google &gt; Ads). Learn how Google uses information from apps that use its services:
+    <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>.</p>
+  </div></section>
+
+  <section class="item"><img src="img/rune_lightning.png" alt=""><div>
+    <h3>3. In-app purchases (Google Play Billing)</h3>
+    <p>Optional purchases are processed entirely by Google Play. We do not receive your payment details.
+    Google Play only tells the Game which item was purchased so it can be delivered.</p>
+  </div></section>
+
+  <section class="item"><img src="img/rune_water.png" alt=""><div>
+    <h3>4. Google Play Games Services</h3>
+    <p>If you sign in to Google Play Games, the Game may use your Play Games profile (player name and avatar) to
+    show achievements and leaderboards. This is governed by Google's privacy policy:
+    <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>.</p>
+  </div></section>
+
+  <section class="item"><img src="img/rune_light.png" alt=""><div>
+    <h3>5. Children</h3>
+    <p>The Game is not directed at children under 13, and we do not knowingly collect personal information from
+    them. If you believe a child has provided personal information through the Game, please contact us and we
+    will help remove it.</p>
+  </div></section>
+
+  <section class="item"><img src="img/rune_shadow.png" alt=""><div>
+    <h3>6. Data sharing and security</h3>
+    <p>We do not sell your personal information. Information is shared only with the Google services described
+    above, which process it under their own privacy policies and security measures.</p>
+  </div></section>
+
+  <section class="item"><img src="img/prism.png" alt=""><div>
+    <h3>7. Your rights</h3>
+    <p>Depending on where you live, you may have rights to access, correct or delete personal data, or to withdraw
+    consent. For data processed by Google, you can use Google's tools
+    (<a href="https://myaccount.google.com">myaccount.google.com</a>). For any other question, contact us.</p>
+  </div></section>
+
+  <section class="item"><img src="img/bolt_light.png" alt=""><div>
+    <h3>8. Changes to this policy</h3>
+    <p>We may update this policy when the Game changes. The "Last updated" date above shows the latest version.</p>
+  </div></section>
+
+  <section class="item"><img src="img/burst_fire.png" alt=""><div>
+    <h3>9. Contact</h3>
+    <p>Email: <strong><a href="mailto:jc.studio.54.games@gmail.com">jc.studio.54.games@gmail.com</a></strong></p>
+  </div></section>
+
+  <div class="divider"><img src="img/wax_seal.png" alt=""></div>
+</article>
+<div class="roller"></div>
+
+<div style="height: 48px"></div>
+
+<!-- ================================================================== ESPAÑOL -->
+<div class="roller"></div>
+<article class="scroll" id="es" lang="es">
+  <h2 class="title">Política de privacidad</h2>
+  <div class="updated">Última actualización: 29 de septiembre de 2026</div>
+  <p>Esta Política de privacidad explica cómo <strong>Rune Rush: Match Magic</strong> (el "Juego"), desarrollado
+  por <strong>JC Studio 54</strong> ("nosotros"), trata la información cuando juegas en dispositivos
+  Android.</p>
+
+  <section class="item"><img src="img/rune_earth.png" alt=""><div>
+    <h3>1. Información guardada en tu dispositivo</h3>
+    <p>El Juego guarda tu progreso (niveles desbloqueados, estrellas, mejores puntuaciones) y tus ajustes (música,
+    sonido, vibración, idioma) <strong>solo en tu dispositivo</strong>. No recibimos ni almacenamos esta información
+    en nuestros servidores. Al desinstalar el Juego se elimina.</p>
+  </div></section>
+
+  <section class="item"><img src="img/rune_fire.png" alt=""><div>
+    <h3>2. Publicidad (Google AdMob)</h3>
+    <p>El Juego muestra anuncios de Google AdMob. Para mostrarlos y medirlos, Google y sus socios pueden recopilar y
+    tratar información como el identificador de publicidad del dispositivo, la dirección IP, el modelo y sistema
+    operativo del dispositivo y tu interacción con los anuncios. Según tu región y tus elecciones, los anuncios pueden
+    ser personalizados o no personalizados. En el Espacio Económico Europeo, el Reino Unido y Suiza, el Juego solicita
+    tu consentimiento antes de usar datos personales para publicidad, y puedes cambiar tu elección en cualquier momento
+    desde los ajustes del Juego.</p>
+    <p>Puedes restablecer tu identificador de publicidad o desactivar los anuncios personalizados en los ajustes de tu
+    dispositivo (Ajustes &gt; Google &gt; Anuncios). Cómo usa Google la información de las apps que utilizan sus
+    servicios: <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>.</p>
+  </div></section>
+
+  <section class="item"><img src="img/rune_lightning.png" alt=""><div>
+    <h3>3. Compras dentro de la app (Google Play Billing)</h3>
+    <p>Las compras opcionales las procesa íntegramente Google Play. No recibimos tus datos de pago. Google Play solo
+    indica al Juego qué artículo se compró para poder entregarlo.</p>
+  </div></section>
+
+  <section class="item"><img src="img/rune_water.png" alt=""><div>
+    <h3>4. Google Play Juegos</h3>
+    <p>Si inicias sesión en Google Play Juegos, el Juego puede usar tu perfil (nombre de jugador y avatar) para mostrar
+    logros y clasificaciones. Esto se rige por la política de privacidad de Google:
+    <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>.</p>
+  </div></section>
+
+  <section class="item"><img src="img/rune_light.png" alt=""><div>
+    <h3>5. Menores</h3>
+    <p>El Juego no está dirigido a menores de 13 años y no recopilamos conscientemente información personal de ellos.
+    Si crees que un menor nos ha proporcionado información personal a través del Juego, contáctanos y te ayudaremos
+    a eliminarla.</p>
+  </div></section>
+
+  <section class="item"><img src="img/rune_shadow.png" alt=""><div>
+    <h3>6. Uso compartido y seguridad</h3>
+    <p>No vendemos tu información personal. La información solo se comparte con los servicios de Google descritos
+    arriba, que la tratan según sus propias políticas de privacidad y medidas de seguridad.</p>
+  </div></section>
+
+  <section class="item"><img src="img/prism.png" alt=""><div>
+    <h3>7. Tus derechos</h3>
+    <p>Según dónde vivas, puedes tener derecho a acceder, corregir o eliminar datos personales, o a retirar tu
+    consentimiento. Para los datos que trata Google, puedes usar sus herramientas
+    (<a href="https://myaccount.google.com">myaccount.google.com</a>). Para cualquier otra consulta, contáctanos.</p>
+  </div></section>
+
+  <section class="item"><img src="img/bolt_light.png" alt=""><div>
+    <h3>8. Cambios en esta política</h3>
+    <p>Podemos actualizar esta política cuando el Juego cambie. La fecha de "Última actualización" indica la versión
+    vigente.</p>
+  </div></section>
+
+  <section class="item"><img src="img/burst_fire.png" alt=""><div>
+    <h3>9. Contacto</h3>
+    <p>Correo: <strong><a href="mailto:jc.studio.54.games@gmail.com">jc.studio.54.games@gmail.com</a></strong></p>
+  </div></section>
+
+  <div class="divider"><img src="img/wax_seal.png" alt=""></div>
+</article>
+<div class="roller"></div>
+
+<footer>
+  <div class="bubble"><strong>Rune Rush: Match Magic</strong><br>
+  Thanks for playing! · ¡Gracias por jugar!</div>
+  <img src="img/player_wizard.png" alt="Wizard">
+</footer>
+
+</div>
+</body>
+</html>
